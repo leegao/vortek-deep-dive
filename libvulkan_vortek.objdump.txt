@@ -1,0 +1,572 @@
+
+analysis/vortek-1.0.tzst_542123213/usr/lib/libvulkan_vortek.so:	file format elf64-littleaarch64
+architecture: aarch64
+start address: 0x0000000000000000
+
+Program Header:
+    LOAD off    0x0000000000000000 vaddr 0x0000000000000000 paddr 0x0000000000000000 align 2**16
+         filesz 0x000000000004569c memsz 0x000000000004569c flags r-x
+    LOAD off    0x000000000004eae0 vaddr 0x000000000005eae0 paddr 0x000000000005eae0 align 2**16
+         filesz 0x0000000000001738 memsz 0x00000000000017f8 flags rw-
+ DYNAMIC off    0x000000000004fd98 vaddr 0x000000000005fd98 paddr 0x000000000005fd98 align 2**3
+         filesz 0x00000000000001f0 memsz 0x00000000000001f0 flags rw-
+    NOTE off    0x00000000000001c8 vaddr 0x00000000000001c8 paddr 0x00000000000001c8 align 2**2
+         filesz 0x0000000000000024 memsz 0x0000000000000024 flags r--
+EH_FRAME off    0x0000000000040228 vaddr 0x0000000000040228 paddr 0x0000000000040228 align 2**2
+         filesz 0x0000000000000a9c memsz 0x0000000000000a9c flags r--
+   STACK off    0x0000000000000000 vaddr 0x0000000000000000 paddr 0x0000000000000000 align 2**4
+         filesz 0x0000000000000000 memsz 0x0000000000000000 flags rw-
+   RELRO off    0x000000000004eae0 vaddr 0x000000000005eae0 paddr 0x000000000005eae0 align 2**0
+         filesz 0x0000000000001520 memsz 0x0000000000001520 flags r--
+
+Dynamic Section:
+  NEEDED       libc.so.6
+  NEEDED       ld-linux-aarch64.so.1
+  SONAME       libvulkan_vortek.so
+  RUNPATH      /data/data/com.winlator/files/rootfs/lib
+  INIT         0x00000000000094c8
+  FINI         0x000000000003de5c
+  INIT_ARRAY   0x000000000005eae0
+  INIT_ARRAYSZ 0x0000000000000010
+  FINI_ARRAY   0x000000000005eaf0
+  FINI_ARRAYSZ 0x0000000000000008
+  GNU_HASH     0x00000000000001f0
+  STRTAB       0x0000000000002cc0
+  SYMTAB       0x0000000000000bf0
+  STRSZ        0x0000000000002597
+  SYMENT       0x0000000000000018
+  PLTGOT       0x000000000005ffe8
+  PLTRELSZ     0x0000000000000618
+  PLTREL       0x0000000000000007
+  JMPREL       0x0000000000008eb0
+  RELA         0x0000000000005568
+  RELASZ       0x0000000000003948
+  RELAENT      0x0000000000000018
+  VERNEED      0x0000000000005518
+  VERNEEDNUM   0x0000000000000002
+  VERSYM       0x0000000000005258
+  RELACOUNT    0x000000000000012e
+
+Version References:
+  required from ld-linux-aarch64.so.1:
+    0x06969197 0x00 03 GLIBC_2.17
+  required from libc.so.6:
+    0x06969188 0x00 04 GLIBC_2.28
+    0x06969197 0x00 02 GLIBC_2.17
+
+Sections:
+Idx Name               Size     VMA              Type
+  0                    00000000 0000000000000000 
+  1 .note.gnu.build-id 00000024 00000000000001c8 DATA
+  2 .gnu.hash          000009fc 00000000000001f0 DATA
+  3 .dynsym            000020d0 0000000000000bf0 DATA
+  4 .dynstr            00002597 0000000000002cc0 DATA
+  5 .gnu.version       000002bc 0000000000005258 DATA
+  6 .gnu.version_r     00000050 0000000000005518 DATA
+  7 .rela.dyn          00003948 0000000000005568 DATA
+  8 .rela.plt          00000618 0000000000008eb0 DATA
+  9 .init              00000018 00000000000094c8 TEXT
+ 10 .plt               00000430 00000000000094e0 TEXT
+ 11 .text              0003454c 0000000000009910 TEXT
+ 12 .fini              00000014 000000000003de5c TEXT
+ 13 .rodata            000023b8 000000000003de70 DATA
+ 14 .eh_frame_hdr      00000a9c 0000000000040228 DATA
+ 15 .eh_frame          000049d4 0000000000040cc8 DATA
+ 16 .init_array        00000010 000000000005eae0 DATA
+ 17 .fini_array        00000008 000000000005eaf0 DATA
+ 18 .data.rel.ro       000012a0 000000000005eaf8 DATA
+ 19 .dynamic           000001f0 000000000005fd98 DATA
+ 20 .got               00000060 000000000005ff88 DATA
+ 21 .got.plt           00000220 000000000005ffe8 DATA
+ 22 .data              00000010 0000000000060208 DATA
+ 23 .bss               000000c0 0000000000060218 BSS
+ 24 .comment           0000002b 0000000000000000 
+ 25 .symtab            00002d78 0000000000000000 
+ 26 .strtab            00002c36 0000000000000000 
+ 27 .shstrtab          000000fa 0000000000000000 
+
+SYMBOL TABLE:
+00000000000001c8 l    d  .note.gnu.build-id	0000000000000000 .note.gnu.build-id
+00000000000001f0 l    d  .gnu.hash	0000000000000000 .gnu.hash
+0000000000000bf0 l    d  .dynsym	0000000000000000 .dynsym
+0000000000002cc0 l    d  .dynstr	0000000000000000 .dynstr
+0000000000005258 l    d  .gnu.version	0000000000000000 .gnu.version
+0000000000005518 l    d  .gnu.version_r	0000000000000000 .gnu.version_r
+0000000000005568 l    d  .rela.dyn	0000000000000000 .rela.dyn
+0000000000008eb0 l    d  .rela.plt	0000000000000000 .rela.plt
+00000000000094c8 l    d  .init	0000000000000000 .init
+00000000000094e0 l    d  .plt	0000000000000000 .plt
+0000000000009910 l    d  .text	0000000000000000 .text
+000000000003de5c l    d  .fini	0000000000000000 .fini
+000000000003de70 l    d  .rodata	0000000000000000 .rodata
+0000000000040228 l    d  .eh_frame_hdr	0000000000000000 .eh_frame_hdr
+0000000000040cc8 l    d  .eh_frame	0000000000000000 .eh_frame
+000000000005eae0 l    d  .init_array	0000000000000000 .init_array
+000000000005eaf0 l    d  .fini_array	0000000000000000 .fini_array
+000000000005eaf8 l    d  .data.rel.ro	0000000000000000 .data.rel.ro
+000000000005fd98 l    d  .dynamic	0000000000000000 .dynamic
+000000000005ff88 l    d  .got	0000000000000000 .got
+000000000005ffe8 l    d  .got.plt	0000000000000000 .got.plt
+0000000000060208 l    d  .data	0000000000000000 .data
+0000000000060218 l    d  .bss	0000000000000000 .bss
+0000000000000000 l    d  .comment	0000000000000000 .comment
+0000000000000000 l    df *ABS*	0000000000000000 crti.o
+000000000000993c l       .text	0000000000000000 $x
+000000000000993c l     F .text	0000000000000014 call_weak_fn
+00000000000094c8 l       .init	0000000000000000 $x
+000000000003de5c l       .fini	0000000000000000 $x
+0000000000000000 l    df *ABS*	0000000000000000 crtn.o
+00000000000094d8 l       .init	0000000000000000 $x
+000000000003de68 l       .fini	0000000000000000 $x
+0000000000000000 l    df *ABS*	0000000000000000 lse-init.o
+0000000000009910 l       .text	0000000000000000 $x
+0000000000009910 l     F .text	000000000000002c init_have_lse_atomics
+000000000005eae0 l       .init_array	0000000000000000 $d
+00000000000602d0 l       .bss	0000000000000000 $d
+0000000000045650 l       .eh_frame	0000000000000000 $d
+0000000000000000 l    df *ABS*	0000000000000000 crtstuff.c
+0000000000009950 l       .text	0000000000000000 $x
+0000000000009950 l     F .text	0000000000000000 deregister_tm_clones
+0000000000009980 l     F .text	0000000000000000 register_tm_clones
+0000000000060208 l       .data	0000000000000000 $d
+00000000000099c0 l     F .text	0000000000000000 __do_global_dtors_aux
+0000000000060218 l     O .bss	0000000000000001 completed.0
+000000000005eaf0 l       .fini_array	0000000000000000 $d
+000000000005eaf0 l     O .fini_array	0000000000000000 __do_global_dtors_aux_fini_array_entry
+0000000000009a10 l     F .text	0000000000000000 frame_dummy
+000000000005eae8 l       .init_array	0000000000000000 $d
+000000000005eae8 l     O .init_array	0000000000000000 __frame_dummy_init_array_entry
+0000000000040cdc l       .eh_frame	0000000000000000 $d
+0000000000060218 l       .bss	0000000000000000 $d
+0000000000000000 l    df *ABS*	0000000000000000 main.c
+0000000000009a20 l       .text	0000000000000000 $x
+0000000000009a20 l     F .text	0000000000000138 terminationCallback
+000000000003de70 l       .rodata	0000000000000000 $d
+0000000000060210 l       .data	0000000000000000 $d
+0000000000060220 l       .bss	0000000000000000 $d
+0000000000040d40 l       .eh_frame	0000000000000000 $d
+0000000000000000 l    df *ABS*	0000000000000000 vulkan_calls.c
+0000000000009e20 l       .text	0000000000000000 $x
+0000000000009f20 l     F .text	00000000000000ec vt_alloc
+000000000000a010 l     F .text	000000000000036c vt_unserialize_VkPhysicalDeviceLimits
+000000000000a380 l     F .text	0000000000000164 vt_serialize_VkBufferCreateInfo
+000000000000a4e4 l     F .text	00000000000000a8 vt_free_all
+000000000000a590 l     F .text	00000000000002e8 vt_serialize_VkImageCreateInfo
+000000000000a880 l     F .text	00000000000002cc vt_serialize_VkPipelineShaderStageCreateInfo
+000000000000ab50 l     F .text	0000000000000310 vt_serialize_VkWriteDescriptorSet
+000000000000ae80 l     F .text	000000000000029c waitForEvents
+000000000000b120 l     F .text	00000000000000ac invertVkStructuresChain
+000000000000f090 l     F .text	00000000000002a8 vt_serialize_VkDescriptorSetLayoutCreateInfo
+0000000000010280 l     F .text	00000000000002c0 vt_sizeof_VkPhysicalDeviceProperties2.isra.0
+0000000000010540 l     F .text	0000000000000400 vt_sizeof_VkPhysicalDeviceFeatures2.isra.0
+0000000000011280 l     F .text	0000000000000594 vt_sizeof_VkDeviceCreateInfo
+0000000000011af0 l     F .text	00000000000009cc vt_serialize_VkPhysicalDeviceFeatures2
+000000000005eaf8 l     O .data.rel.ro	00000000000012a0 vkDispatchTable
+00000000000127e4 l     F .text	0000000000000258 vt_sizeof_VkBindSparseInfo
+0000000000012a40 l     F .text	0000000000000170 vt_sizeof_VkSubmitInfo
+0000000000012bb0 l     F .text	0000000000000200 vt_sizeof_VkRenderPassCreateInfo
+0000000000013510 l     F .text	00000000000001d4 vt_sizeof_VkRenderPassBeginInfo
+0000000000013d00 l     F .text	000000000000070c vt_serialize_VkRenderPassBeginInfo
+0000000000014930 l     F .text	000000000000023c vt_serialize_VkImageMemoryBarrier
+0000000000015430 l     F .text	00000000000004f4 vt_serialize_VkDependencyInfo
+0000000000015924 l     F .text	0000000000000298 vt_sizeof_VkSubpassDescription2
+0000000000016090 l     F .text	000000000000059c vt_sizeof_VkGraphicsPipelineCreateInfo
+00000000000344a4 l     F .text	00000000000002bc vt_unserialize_VkMemoryRequirements2
+000000000003de88 l       .rodata	0000000000000000 $d
+000000000003ffe8 l       .rodata	0000000000000000 $d
+0000000000060214 l       .data	0000000000000000 $d
+0000000000060214 l     O .data	0000000000000004 usePlacedAddr.0
+0000000000060270 l       .bss	0000000000000000 $d
+0000000000060270 l     O .bss	0000000000000030 vt_call_mutex
+000000000005eaf8 l       .data.rel.ro	0000000000000000 $d
+0000000000040dc0 l       .eh_frame	0000000000000000 $d
+0000000000000000 l    df *ABS*	0000000000000000 vk_object.c
+000000000003c5b0 l       .text	0000000000000000 $x
+00000000000602a0 l       .bss	0000000000000000 $d
+00000000000602a0 l     O .bss	0000000000000020 nullObject
+00000000000602c0 l     O .bss	0000000000000010 cachedObjects
+0000000000044dc8 l       .eh_frame	0000000000000000 $d
+0000000000000000 l    df *ABS*	0000000000000000 arrays.c
+000000000003c7d0 l       .text	0000000000000000 $x
+000000000003c7d0 l     F .text	0000000000000010 intCompare
+000000000003c7e0 l     F .text	00000000000000a4 ArrayDeque_doubleCapacity
+0000000000044e80 l       .eh_frame	0000000000000000 $d
+0000000000000000 l    df *ABS*	0000000000000000 descriptor_update_template.c
+000000000003d6d0 l       .text	0000000000000000 $x
+00000000000453e0 l       .eh_frame	0000000000000000 $d
+0000000000000000 l    df *ABS*	0000000000000000 ring_buffer.c
+000000000003d980 l       .text	0000000000000000 $x
+000000000003ff98 l       .rodata	0000000000000000 $d
+0000000000045468 l       .eh_frame	0000000000000000 $d
+0000000000000000 l    df *ABS*	0000000000000000 ldclr_4_4.o
+000000000003dde0 l       .text	0000000000000000 $x
+0000000000045620 l       .eh_frame	0000000000000000 $d
+0000000000000000 l    df *ABS*	0000000000000000 ldset_4_4.o
+000000000003de10 l       .text	0000000000000000 $x
+0000000000045638 l       .eh_frame	0000000000000000 $d
+0000000000000000 l    df *ABS*	0000000000000000 atexit.oS
+000000000003de40 l       .text	0000000000000000 $x
+0000000000045678 l       .eh_frame	0000000000000000 $d
+0000000000000000 l    df *ABS*	0000000000000000 crtstuff.c
+0000000000045698 l       .eh_frame	0000000000000000 $d
+0000000000045698 l     O .eh_frame	0000000000000000 __FRAME_END__
+0000000000000000 l    df *ABS*	0000000000000000 
+000000000003de10 l     F .text	0000000000000030 __aarch64_ldset4_acq_rel
+000000000003de40 l     F .text	000000000000001c atexit
+000000000003de5c l     F .fini	0000000000000000 _fini
+0000000000060208 l     O .data	0000000000000000 __dso_handle
+00000000000602d0 l     O .bss	0000000000000001 __aarch64_have_lse_atomics
+000000000005fd98 l     O *ABS*	0000000000000000 _DYNAMIC
+000000000003dde0 l     F .text	0000000000000030 __aarch64_ldclr4_acq_rel
+0000000000040228 l       .eh_frame_hdr	0000000000000000 __GNU_EH_FRAME_HDR
+0000000000060218 l     O .data	0000000000000000 __TMC_END__
+000000000005ff88 l     O *ABS*	0000000000000000 _GLOBAL_OFFSET_TABLE_
+00000000000094c8 l     F .init	0000000000000000 _init
+00000000000094e0 l       .plt	0000000000000000 $x
+000000000003db70 g     F .text	0000000000000148 RingBuffer_write
+0000000000033900 g     F .text	000000000000089c vt_call_vkCreateComputePipelines
+0000000000000000       F *UND*	0000000000000000 memcpy@GLIBC_2.17
+0000000000033640 g     F .text	00000000000002bc vt_call_vkGetDeviceQueue2
+000000000001b040 g     F .text	00000000000002cc vt_call_vkCreateSamplerYcbcrConversion
+0000000000009eb4 g     F .text	000000000000003c vt_call_vkCreateXlibSurfaceKHR
+0000000000000000       F *UND*	0000000000000000 memmove@GLIBC_2.17
+000000000001ebf0 g     F .text	0000000000000308 vt_call_vkEnumerateInstanceExtensionProperties
+0000000000000000       F *UND*	0000000000000000 recvmsg@GLIBC_2.17
+000000000003d6d0 g     F .text	00000000000000f8 DescriptorUpdateTemplate_create
+0000000000000000       F *UND*	0000000000000000 strlen@GLIBC_2.17
+000000000002a844 g     F .text	000000000000069c vt_call_vkCreateInstance
+000000000003cca0 g     F .text	000000000000003c ArrayList_remove
+0000000000019200 g     F .text	0000000000000340 vt_call_vkGetPhysicalDeviceQueueFamilyProperties2
+000000000000eee0 g     F .text	0000000000000124 vt_call_vkCmdWriteTimestamp2
+000000000000d474 g     F .text	0000000000000160 vt_call_vkCmdDrawIndirectByteCountEXT
+000000000000ea00 g     F .text	0000000000000298 vt_call_vkCmdResolveImage2
+0000000000009e20 g     F .text	0000000000000008 vt_call_vkEnumerateInstanceLayerProperties
+0000000000018c00 g     F .text	00000000000002f0 vt_call_vkGetImageSparseMemoryRequirements
+000000000003d054 g     F .text	00000000000000e8 ArrayMap_put
+0000000000021ef0 g     F .text	000000000000020c vt_call_vkDestroyBuffer
+0000000000037f80 g     F .text	0000000000000318 vt_call_vkBindBufferMemory
+000000000000d680 g     F .text	0000000000000090 vt_call_vkCmdSetCullMode
+0000000000009e74 g     F .text	0000000000000008 vt_call_vkBindBufferMemory2
+0000000000000000  w      *UND*	0000000000000000 _ITM_deregisterTMCloneTable
+0000000000023074 g     F .text	000000000000021c vt_call_vkGetRenderAreaGranularity
+000000000003d140 g     F .text	0000000000000040 ArrayMap_get
+00000000000218c0 g     F .text	000000000000020c vt_call_vkDestroyBufferView
+00000000000389c4 g     F .text	00000000000009dc vt_call_vkGetPhysicalDeviceImageFormatProperties2
+0000000000036470 g     F .text	000000000000121c vt_call_vkCreateRenderPass2
+000000000003d2a0 g     F .text	000000000000005c SparseArray_indexOfKey
+000000000003d430 g     F .text	0000000000000040 SparseArray_get
+000000000001e8a0 g     F .text	0000000000000348 vt_call_vkGetPhysicalDeviceSurfaceFormatsKHR
+00000000000131b0 g     F .text	0000000000000118 vt_call_vkCmdEndQuery
+000000000003b0d0 g     F .text	0000000000000338 vt_call_vkMergePipelineCaches
+000000000000dde4 g     F .text	00000000000000c8 vt_call_vkCmdSetStencilOp
+0000000000031694 g     F .text	0000000000000280 vt_call_vkDeviceWaitIdle
+000000000000f340 g     F .text	0000000000000230 vt_call_vkCmdBindVertexBuffers2
+0000000000060230 g     O .bss	0000000000000030 memoryPoolsMutex
+0000000000000000  w    F *UND*	0000000000000000 __cxa_finalize@GLIBC_2.17
+000000000000dfd0 g     F .text	0000000000000090 vt_call_vkCmdSetPrimitiveRestartEnable
+000000000000e060 g     F .text	0000000000000210 vt_call_vkCmdCopyBuffer2
+0000000000018494 g     F .text	00000000000001ac vt_call_vkEnumerateInstanceVersion
+000000000000c6f4 g     F .text	00000000000001c4 vt_call_vkCmdCopyQueryPoolResults
+0000000000000000       F *UND*	0000000000000000 __cxa_atexit@GLIBC_2.17
+000000000000d9b0 g     F .text	0000000000000164 vt_call_vkCmdSetScissorWithCount
+000000000000f570 g     F .text	00000000000001e4 vt_call_vkCmdBindTransformFeedbackBuffersEXT
+000000000003d470 g     F .text	0000000000000078 SparseArray_removeAt
+000000000001e240 g     F .text	0000000000000324 vt_call_vkGetPhysicalDeviceSurfacePresentModesKHR
+0000000000010ed0 g     F .text	000000000000028c vt_call_vkCmdCopyImage
+0000000000017300 g     F .text	0000000000000340 vt_call_vkCmdSetEvent2
+000000000003d584 g     F .text	000000000000001c ArrayDeque_isEmpty
+0000000000000000       O *UND*	0000000000000000 stderr@GLIBC_2.17
+0000000000000000       F *UND*	0000000000000000 qsort@GLIBC_2.17
+000000000001f7c0 g     F .text	000000000000020c vt_call_vkDestroyFramebuffer
+0000000000022b04 g     F .text	0000000000000570 vt_call_vkWaitSemaphores
+00000000000109c4 g     F .text	0000000000000008 vt_call_vkImportSemaphoreFdKHR
+000000000003dcc0 g     F .text	0000000000000008 RingBuffer_getSHMemSize
+0000000000032194 g     F .text	00000000000002c0 vt_call_vkGetPhysicalDeviceProperties
+000000000000c150 g     F .text	0000000000000170 vt_call_vkCmdUpdateBuffer
+000000000000d830 g     F .text	000000000000017c vt_call_vkCmdSetViewportWithCount
+000000000003a660 g     F .text	0000000000000378 vt_call_vkInvalidateMappedMemoryRanges
+000000000000bbd4 g     F .text	00000000000000c0 vt_call_vkCmdDraw
+0000000000017640 g     F .text	00000000000000e4 vt_call_vkDestroyDescriptorUpdateTemplate
+000000000003d5d0 g     F .text	0000000000000030 ArrayDeque_addLast
+00000000000109d0 g     F .text	0000000000000004 vt_call_vkGetPhysicalDeviceExternalFenceProperties
+000000000003d180 g     F .text	0000000000000074 ArrayMap_removeAt
+000000000000d210 g     F .text	000000000000013c vt_call_vkCmdBeginQueryIndexedEXT
+0000000000016d70 g     F .text	0000000000000190 vt_call_vkCmdBeginTransformFeedbackEXT
+000000000003c5b0 g     F .text	0000000000000154 VkObject_create
+00000000000136e4 g     F .text	000000000000061c vt_call_vkCmdBeginRendering
+000000000003c590 g     F .text	0000000000000014 vk_icdNegotiateLoaderICDInterfaceVersion
+000000000003dcd0 g     F .text	00000000000000b8 RingBuffer_create
+0000000000032c64 g     F .text	0000000000000290 vt_call_vkGetBufferDeviceAddress
+000000000001c250 g     F .text	00000000000004d8 vt_call_vkGetDescriptorSetLayoutSupport
+0000000000020c60 g     F .text	000000000000020c vt_call_vkDestroyQueryPool
+0000000000018ef0 g     F .text	0000000000000310 vt_call_vkGetPhysicalDeviceSparseImageFormatProperties
+00000000000109a0 g     F .text	0000000000000008 vt_call_vkGetSemaphoreCounterValue
+000000000003b7b4 g     F .text	0000000000000a90 vt_call_vkCreateRenderPass
+0000000000022100 g     F .text	0000000000000674 vt_call_vkCreateSampler
+00000000000341a0 g     F .text	0000000000000304 vt_call_vkResetFences
+000000000000df40 g     F .text	0000000000000090 vt_call_vkCmdSetDepthBiasEnable
+0000000000031194 g     F .text	0000000000000280 vt_call_vkSetEvent
+0000000000009ef0 g     F .text	0000000000000030 vt_call_vkGetDeviceGroupPresentCapabilitiesKHR
+0000000000010960 g     F .text	0000000000000008 vt_call_vkGetSemaphoreFdKHR
+000000000001f260 g     F .text	0000000000000354 vt_call_vkCreateBuffer
+0000000000028190 g     F .text	0000000000000448 vt_call_vkCreatePipelineLayout
+0000000000032740 g     F .text	0000000000000294 vt_call_vkGetBufferOpaqueCaptureAddress
+0000000000000000       F *UND*	0000000000000000 __memcpy_chk@GLIBC_2.17
+000000000003c884 g     F .text	0000000000000070 IntArray_add
+000000000001f5b4 g     F .text	0000000000000208 vt_call_vkDestroySampler
+000000000000c5d0 g     F .text	0000000000000124 vt_call_vkCmdWriteTimestamp
+000000000003c500 g     F .text	000000000000008c vk_icdGetInstanceProcAddr
+0000000000039700 g     F .text	0000000000000360 vt_call_vkGetPhysicalDeviceQueueFamilyProperties
+00000000000109f0 g     F .text	0000000000000008 vt_call_vkSignalSemaphore
+000000000003b410 g     F .text	00000000000003a4 vt_call_vkGetPhysicalDeviceSurfaceCapabilitiesKHR
+000000000000c2c0 g     F .text	000000000000013c vt_call_vkCmdFillBuffer
+0000000000000000       F *UND*	0000000000000000 malloc@GLIBC_2.17
+000000000003d4f0 g     F .text	000000000000003c SparseArray_remove
+0000000000026430 g     F .text	0000000000000394 vt_call_vkAllocateCommandBuffers
+0000000000037c60 g     F .text	0000000000000318 vt_call_vkBindImageMemory
+0000000000009e40 g     F .text	0000000000000010 vt_call_vkGetPhysicalDeviceSurfaceSupportKHR
+000000000000dcc4 g     F .text	0000000000000090 vt_call_vkCmdSetDepthBoundsTestEnable
+000000000003d804 g     F .text	0000000000000174 DescriptorUpdateTemplate_fillDescriptorWrites
+00000000000382a0 g     F .text	00000000000003d0 vt_call_vkGetPhysicalDeviceMemoryProperties2
+000000000000d5d4 g     F .text	00000000000000a8 vt_call_vkCmdSetLineStippleEXT
+000000000003d5a0 g     F .text	0000000000000030 ArrayDeque_addFirst
+000000000000cae0 g     F .text	0000000000000088 vt_call_vkCmdEndRenderPass
+0000000000012f60 g     F .text	0000000000000124 vt_call_vkCmdResetQueryPool
+0000000000019540 g     F .text	00000000000003a4 vt_call_vkGetImageSparseMemoryRequirements2
+0000000000021ce0 g     F .text	000000000000020c vt_call_vkDestroyCommandPool
+0000000000060228 g     O .bss	0000000000000008 serverRing
+0000000000031b94 g     F .text	0000000000000600 vt_call_vkAllocateDescriptorSets
+0000000000000000       F *UND*	0000000000000000 memset@GLIBC_2.17
+000000000000d060 g     F .text	00000000000001b0 vt_call_vkCmdDrawIndexedIndirectCount
+0000000000025424 g     F .text	0000000000000634 vt_call_vkCreateSwapchainKHR
+000000000000d7a0 g     F .text	0000000000000090 vt_call_vkCmdSetPrimitiveTopology
+000000000001c730 g     F .text	00000000000002d4 vt_call_vkAcquireNextImageKHR
+0000000000023290 g     F .text	0000000000000394 vt_call_vkCreateFence
+000000000000c540 g     F .text	0000000000000088 vt_call_vkCmdEndConditionalRenderingEXT
+000000000000b8a0 g     F .text	00000000000000a8 vt_call_vkCmdSetStencilCompareMask
+000000000000b950 g     F .text	00000000000000a8 vt_call_vkCmdSetStencilWriteMask
+000000000000b2e4 g     F .text	0000000000000184 vt_call_vkCmdSetViewport
+000000000000b740 g     F .text	00000000000000ac vt_call_vkCmdSetBlendConstants
+000000000000bab0 g     F .text	0000000000000124 vt_call_vkCmdBindIndexBuffer
+0000000000013084 g     F .text	0000000000000124 vt_call_vkCmdBeginQuery
+0000000000023e70 g     F .text	0000000000000220 vt_call_vkGetImageMemoryRequirements
+0000000000014540 g     F .text	0000000000000158 vt_call_vkCmdBeginRenderPass2
+00000000000329d4 g     F .text	0000000000000290 vt_call_vkGetDeviceMemoryOpaqueCaptureAddress
+0000000000014410 g     F .text	0000000000000128 vt_call_vkCmdBeginRenderPass
+000000000003d980 g     F .text	0000000000000020 RingBuffer_setStatus
+000000000001cce4 g     F .text	00000000000002cc vt_call_vkGetQueryPoolResults
+000000000001b310 g     F .text	00000000000004ac vt_call_vkGetPhysicalDeviceFormatProperties2
+0000000000000000       F *UND*	0000000000000000 calloc@GLIBC_2.17
+00000000000248a0 g     F .text	00000000000005e0 vt_call_vkGetImageMemoryRequirements2
+0000000000020840 g     F .text	000000000000020c vt_call_vkDestroyPipelineCache
+000000000003dd90 g     F .text	0000000000000050 RingBuffer_free
+0000000000016be0 g     F .text	0000000000000190 vt_call_vkCmdBindVertexBuffers
+000000000001bb70 g     F .text	000000000000042c vt_call_vkWaitForFences
+000000000003d230 g     F .text	0000000000000070 ArrayMap_free
+0000000000025c90 g     F .text	0000000000000534 vt_call_vkUpdateDescriptorSetWithTemplate
+000000000000b680 g     F .text	00000000000000b8 vt_call_vkCmdSetDepthBias
+000000000003cd50 g     F .text	0000000000000068 ArrayList_fromStrings
+0000000000034c40 g     F .text	00000000000005f8 vt_call_vkGetDeviceImageMemoryRequirements
+000000000000e510 g     F .text	0000000000000284 vt_call_vkCmdBlitImage2
+0000000000000000       F *UND*	0000000000000000 realloc@GLIBC_2.17
+0000000000010990 g     F .text	0000000000000008 vt_call_vkAcquireNextImage2KHR
+00000000000285e0 g     F .text	000000000000029c vt_call_vkGetPhysicalDeviceMemoryProperties
+0000000000000000       F *UND*	0000000000000000 strdup@GLIBC_2.17
+0000000000009eb0 g     F .text	0000000000000004 vt_call_vkGetPrivateData
+000000000003d634 g     F .text	0000000000000030 ArrayDeque_removeLast
+0000000000000000       F *UND*	0000000000000000 __stack_chk_fail@GLIBC_2.17
+0000000000035dc0 g     F .text	00000000000002e4 vt_call_vkFreeDescriptorSets
+0000000000035240 g     F .text	00000000000004cc vt_call_vkCreateDescriptorPool
+0000000000000000       F *UND*	0000000000000000 close@GLIBC_2.17
+000000000001fbe0 g     F .text	000000000000020c vt_call_vkDestroyImageView
+0000000000014f70 g     F .text	00000000000004b8 vt_call_vkCmdWaitEvents
+0000000000060220 g     O .bss	0000000000000008 clientRing
+0000000000017a54 g     F .text	00000000000000e8 vt_call_vkUnmapMemory
+0000000000021080 g     F .text	000000000000020c vt_call_vkDestroyInstance
+000000000003c754 g     F .text	0000000000000028 VkObject_fromHandle
+00000000000216b0 g     F .text	000000000000020c vt_call_vkDestroySwapchainKHR
+0000000000000000  w      *UND*	0000000000000000 __gmon_start__
+000000000001ca04 g     F .text	00000000000002e0 vt_call_vkCreatePipelineCache
+0000000000020000 g     F .text	000000000000020c vt_call_vkDestroyImage
+000000000003d7d0 g     F .text	0000000000000034 DescriptorUpdateTemplate_free
+0000000000000000       O *UND*	0000000000000000 __stack_chk_guard@GLIBC_2.17
+0000000000000000       F *UND*	0000000000000000 write@GLIBC_2.17
+0000000000009e60 g     F .text	0000000000000004 vt_call_vkGetPhysicalDeviceExternalBufferProperties
+000000000003d664 g     F .text	0000000000000060 ArrayDeque_free
+000000000003d344 g     F .text	00000000000000e8 SparseArray_put
+000000000003a9e0 g     F .text	000000000000036c vt_call_vkCreateQueryPool
+0000000000000000       F *UND*	0000000000000000 __getauxval@GLIBC_2.17
+0000000000023624 g     F .text	000000000000062c vt_call_vkQueuePresentKHR
+0000000000015bc0 g     F .text	00000000000004c8 vt_call_vkCmdPushDescriptorSetWithTemplateKHR
+0000000000027740 g     F .text	0000000000000290 vt_call_vkGetPhysicalDeviceFormatProperties
+0000000000032454 g     F .text	00000000000002e4 vt_call_vkResetDescriptorPool
+0000000000024e80 g     F .text	00000000000005a4 vt_call_vkAllocateMemory
+000000000003ad50 g     F .text	0000000000000378 vt_call_vkFlushMappedMemoryRanges
+0000000000020a50 g     F .text	000000000000020c vt_call_vkDestroyPipeline
+000000000001b7c0 g     F .text	00000000000003a8 vt_call_vkGetPhysicalDeviceSparseImageFormatProperties2
+000000000003d1f4 g     F .text	000000000000003c ArrayMap_remove
+000000000000cb70 g     F .text	000000000000013c vt_call_vkCmdExecuteCommands
+00000000000132d0 g     F .text	0000000000000118 vt_call_vkCmdSetEvent
+0000000000030c90 g     F .text	0000000000000284 vt_call_vkQueueWaitIdle
+000000000000fb84 g     F .text	0000000000000260 vt_call_vkCmdCopyImageToBuffer
+0000000000020e70 g     F .text	000000000000020c vt_call_vkDestroyShaderModule
+0000000000010074 g     F .text	0000000000000208 vt_call_vkCmdBindDescriptorSets
+0000000000027c60 g     F .text	0000000000000530 vt_call_vkUpdateDescriptorSets
+0000000000009e70 g     F .text	0000000000000004 vt_call_vkGetDeviceGroupPeerMemoryFeatures
+0000000000034760 g     F .text	00000000000004d8 vt_call_vkGetDeviceBufferMemoryRequirements
+00000000000267c4 g     F .text	0000000000000408 vt_call_vkCreateImage
+0000000000024090 g     F .text	0000000000000220 vt_call_vkGetBufferMemoryRequirements
+000000000003d530 g     F .text	0000000000000054 ArrayDeque_init
+000000000000b5e0 g     F .text	00000000000000a0 vt_call_vkCmdSetLineWidth
+000000000003c750 g     F .text	0000000000000004 VkObject_fromId
+0000000000000000       F *UND*	0000000000000000 __fprintf_chk@GLIBC_2.17
+0000000000000000       F *UND*	0000000000000000 strcmp@GLIBC_2.17
+00000000000214a0 g     F .text	000000000000020c vt_call_vkDestroyPipelineLayout
+0000000000000000       F *UND*	0000000000000000 mmap@GLIBC_2.17
+00000000000109d4 g     F .text	0000000000000004 vt_call_vkDestroyPrivateDataSlot
+000000000003cc30 g     F .text	0000000000000070 ArrayList_removeAt
+00000000000133f0 g     F .text	0000000000000118 vt_call_vkCmdResetEvent
+0000000000017724 g     F .text	0000000000000330 vt_call_vkCmdPipelineBarrier2
+0000000000028c84 g     F .text	0000000000001938 vt_call_vkCreateGraphicsPipelines
+0000000000000000       F *UND*	0000000000000000 strtol@GLIBC_2.17
+00000000000169c0 g     F .text	0000000000000218 vt_call_vkCmdSetSampleLocationsEXT
+000000000003cb50 g     F .text	0000000000000024 IntArray_sort
+0000000000037930 g     F .text	000000000000032c vt_call_vkFreeCommandBuffers
+0000000000030f14 g     F .text	0000000000000280 vt_call_vkGetEventStatus
+000000000001dd44 g     F .text	00000000000004f8 vt_call_vkCreateImageView
+0000000000035710 g     F .text	00000000000003d4 vt_call_vkMapMemory
+00000000000279d0 g     F .text	0000000000000290 vt_call_vkGetPhysicalDeviceMultisamplePropertiesEXT
+00000000000119b0 g     F .text	000000000000013c vt_call_vkCmdDrawIndirect
+0000000000021ad0 g     F .text	000000000000020c vt_call_vkDestroyDescriptorSetLayout
+000000000000ae60 g     F .text	0000000000000018 vt_call_vkDestroySurfaceKHR
+000000000003cb10 g     F .text	0000000000000038 IntArray_clear
+000000000000f004 g     F .text	0000000000000088 vt_call_vkCmdEndRendering
+000000000003da00 g     F .text	0000000000000024 RingBuffer_freeSpace
+0000000000000000       F *UND*	0000000000000000 free@GLIBC_2.17
+0000000000032ef4 g     F .text	000000000000074c vt_call_vkBeginCommandBuffer
+000000000003cdc0 g     F .text	0000000000000248 ArrayMap_indexOfKey
+000000000003d010 g     F .text	0000000000000044 ArrayMap_indexOfValue
+0000000000016630 g     F .text	0000000000000388 vt_call_vkCmdPushDescriptorSetKHR
+000000000003d9d4 g     F .text	0000000000000024 RingBuffer_size
+0000000000019dd0 g     F .text	0000000000000fb8 vt_call_vkCreateDevice
+0000000000039a60 g     F .text	000000000000038c vt_call_vkGetPhysicalDeviceImageFormatProperties
+0000000000028880 g     F .text	0000000000000404 vt_call_vkCreateSemaphore
+000000000000f970 g     F .text	0000000000000214 vt_call_vkCmdClearColorImage
+000000000003cb74 g     F .text	0000000000000040 ArrayList_indexOf
+000000000000e270 g     F .text	0000000000000298 vt_call_vkCmdCopyImage2
+000000000001fdf0 g     F .text	000000000000020c vt_call_vkDestroySemaphore
+0000000000010a00 g     F .text	0000000000000268 vt_call_vkCmdCopyBufferToImage2
+0000000000017c44 g     F .text	000000000000018c vt_call_vkEndCommandBuffer
+0000000000009e50 g     F .text	0000000000000008 vt_call_vkGetPhysicalDeviceXlibPresentationSupportKHR
+00000000000393a0 g     F .text	000000000000035c vt_call_vkCreateCommandPool
+000000000000c8c0 g     F .text	000000000000018c vt_call_vkCmdPushConstants
+0000000000010980 g     F .text	0000000000000008 vt_call_vkBindImageMemory2
+0000000000009e64 g     F .text	0000000000000008 vt_call_vkGetMemoryFdPropertiesKHR
+000000000000bd70 g     F .text	000000000000013c vt_call_vkCmdDrawIndexedIndirect
+00000000000109b0 g     F .text	0000000000000008 vt_call_vkGetPhysicalDeviceToolProperties
+0000000000010c70 g     F .text	000000000000025c vt_call_vkCmdCopyBufferToImage
+0000000000000000       F *UND*	0000000000000000 connect@GLIBC_2.17
+000000000000edc0 g     F .text	0000000000000118 vt_call_vkCmdResetEvent2
+000000000000b470 g     F .text	0000000000000170 vt_call_vkCmdSetScissor
+0000000000022774 g     F .text	0000000000000390 vt_call_vkEnumeratePhysicalDeviceGroups
+000000000003c704 g     F .text	0000000000000044 VkObject_toHandle
+000000000000beb0 g     F .text	00000000000000a8 vt_call_vkCmdDispatch
+0000000000000000       F *UND*	0000000000000000 thrd_yield@GLIBC_2.28
+0000000000010950 g     F .text	0000000000000008 vt_call_vkGetMemoryFdKHR
+00000000000109e0 g     F .text	0000000000000008 vt_call_vkImportFenceFdKHR
+0000000000031414 g     F .text	0000000000000280 vt_call_vkGetFenceStatus
+0000000000024650 g     F .text	000000000000024c vt_call_vkResetCommandBuffer
+000000000001ef00 g     F .text	0000000000000358 vt_call_vkGetSwapchainImagesKHR
+0000000000000000       F *UND*	0000000000000000 socket@GLIBC_2.17
+00000000000125b0 g     F .text	0000000000000234 vt_call_vkCmdClearAttachments
+0000000000000000       F *UND*	0000000000000000 munmap@GLIBC_2.17
+000000000003d600 g     F .text	0000000000000034 ArrayDeque_removeFirst
+000000000000deb0 g     F .text	0000000000000090 vt_call_vkCmdSetRasterizerDiscardEnable
+0000000000010940 g     F .text	0000000000000008 vt_call_vkCreatePrivateDataSlot
+0000000000012db0 g     F .text	00000000000001b0 vt_call_vkCmdDrawIndirectCount
+000000000000ccb0 g     F .text	0000000000000090 vt_call_vkCmdSetDeviceMask
+00000000000261c4 g     F .text	0000000000000268 vt_call_vkResetQueryPool
+0000000000010970 g     F .text	0000000000000008 vt_call_vkGetFenceFdKHR
+0000000000018640 g     F .text	00000000000005bc vt_call_vkQueueSubmit2
+000000000003da24 g     F .text	0000000000000148 RingBuffer_read
+00000000000109c0 g     F .text	0000000000000004 vt_call_vkGetPhysicalDeviceExternalSemaphoreProperties
+000000000000ca50 g     F .text	0000000000000090 vt_call_vkCmdNextSubpass
+0000000000035ae4 g     F .text	00000000000002d4 vt_call_vkGetImageSubresourceLayout
+0000000000009ea0 g     F .text	0000000000000008 vt_call_vkSetPrivateData
+000000000001ad90 g     F .text	00000000000002ac vt_call_vkCreateBufferView
+0000000000025a60 g     F .text	000000000000022c vt_call_vkDestroyDescriptorPool
+0000000000011814 g     F .text	0000000000000194 vt_call_vkCmdEndTransformFeedbackEXT
+0000000000031914 g     F .text	0000000000000280 vt_call_vkResetEvent
+0000000000039df0 g     F .text	0000000000000870 vt_call_vkQueueSubmit
+000000000001bfa0 g     F .text	00000000000002a8 vt_call_vkCreateShaderModule
+000000000003ca50 g     F .text	00000000000000bc IntArray_remove
+00000000000198e4 g     F .text	00000000000004e4 vt_call_vkGetBufferMemoryRequirements2
+000000000000ce20 g     F .text	0000000000000140 vt_call_vkCmdNextSubpass2
+000000000003d300 g     F .text	0000000000000044 SparseArray_indexOfValue
+0000000000060260 g     O .bss	0000000000000010 memoryPools
+000000000003c780 g     F .text	0000000000000048 VkObject_free
+0000000000020630 g     F .text	000000000000020c vt_call_vkDestroySamplerYcbcrConversion
+000000000000d710 g     F .text	0000000000000090 vt_call_vkCmdSetFrontFace
+0000000000026bd0 g     F .text	0000000000000434 vt_call_vkCreateDescriptorSetLayout
+000000000000dd54 g     F .text	0000000000000090 vt_call_vkCmdSetStencilTestEnable
+000000000000d350 g     F .text	0000000000000124 vt_call_vkCmdEndQueryIndexedEXT
+0000000000020420 g     F .text	000000000000020c vt_call_vkDestroyDevice
+0000000000011160 g     F .text	0000000000000118 vt_call_vkCmdDispatchIndirect
+000000000002dbd0 g     F .text	00000000000030c0 vt_call_vkGetPhysicalDeviceProperties2
+000000000002aee0 g     F .text	00000000000002e0 vt_call_vkResetCommandPool
+000000000003d9a0 g     F .text	0000000000000020 RingBuffer_unsetStatus
+000000000001e564 g     F .text	000000000000033c vt_call_vkGetPipelineCacheData
+000000000000dba4 g     F .text	0000000000000090 vt_call_vkCmdSetDepthWriteEnable
+0000000000000000       F *UND*	0000000000000000 __poll_chk@GLIBC_2.17
+000000000003c244 g     F .text	00000000000002b8 vt_call_vkGetDeviceMemoryCommitment
+0000000000000000       F *UND*	0000000000000000 usleep@GLIBC_2.17
+0000000000017dd0 g     F .text	00000000000006c4 vt_call_vkGetDeviceImageSparseMemoryRequirements
+00000000000360a4 g     F .text	00000000000003c4 vt_call_vkGetPhysicalDeviceFeatures
+0000000000037690 g     F .text	0000000000000298 vt_call_vkTrimCommandPool
+000000000000c400 g     F .text	0000000000000138 vt_call_vkCmdBeginConditionalRenderingEXT
+0000000000020210 g     F .text	000000000000020c vt_call_vkDestroyRenderPass
+000000000003cbb4 g     F .text	000000000000007c ArrayList_add
+000000000002a5c0 g     F .text	0000000000000284 vt_call_vkGetDeviceQueue
+000000000001da14 g     F .text	0000000000000330 vt_call_vkEnumeratePhysicalDevices
+000000000000ba00 g     F .text	00000000000000a8 vt_call_vkCmdSetStencilReference
+00000000000242b0 g     F .text	0000000000000398 vt_call_vkEnumerateDeviceExtensionProperties
+000000000000bf60 g     F .text	00000000000001ec vt_call_vkCmdCopyBuffer
+0000000000012534 g     F .text	0000000000000074 vt_call_vkGetDeviceProcAddr
+000000000002b1c0 g     F .text	0000000000002a0c vt_call_vkGetPhysicalDeviceFeatures2
+0000000000021290 g     F .text	000000000000020c vt_call_vkDestroyEvent
+0000000000000000       F *UND*	0000000000000000 strncpy@GLIBC_2.17
+000000000003c8f4 g     F .text	0000000000000158 IntArray_addAll
+000000000000fde4 g     F .text	0000000000000290 vt_call_vkCmdBlitImage
+0000000000017b40 g     F .text	0000000000000104 vt_call_vkCreateDescriptorUpdateTemplate
+000000000000eca0 g     F .text	0000000000000118 vt_call_vkCmdSetColorWriteEnableEXT
+000000000001f9d0 g     F .text	000000000000020c vt_call_vkDestroyFence
+0000000000000000  w      *UND*	0000000000000000 _ITM_registerTMCloneTable
+000000000000cf60 g     F .text	00000000000000f8 vt_call_vkCmdEndRenderPass2
+0000000000009b60 g     F .text	00000000000002b4 vortekInitOnce
+000000000000e794 g     F .text	000000000000026c vt_call_vkCmdCopyImageToBuffer2
+000000000001cfb0 g     F .text	0000000000000a64 vt_call_vkQueueBindSparse
+0000000000000000       F *UND*	0000000000000000 __errno_location@GLIBC_2.17
+0000000000014b70 g     F .text	0000000000000400 vt_call_vkCmdPipelineBarrier
+000000000003cce0 g     F .text	000000000000006c ArrayList_free
+0000000000038670 g     F .text	0000000000000354 vt_call_vkCreateEvent
+0000000000009e80 g     F .text	0000000000000010 vt_call_vkGetDeviceGroupSurfacePresentModesKHR
+0000000000000000       F *UND*	0000000000000000 getenv@GLIBC_2.17
+000000000000db14 g     F .text	0000000000000090 vt_call_vkCmdSetDepthTestEnable
+0000000000060210 g     O .data	0000000000000004 serverFd
+0000000000000000       F *UND*	0000000000000000 pthread_mutex_lock@GLIBC_2.17
+0000000000000000       F *UND*	0000000000000000 syscall@GLIBC_2.17
+000000000000cd40 g     F .text	00000000000000d8 vt_call_vkCmdDispatchBase
+00000000000146a0 g     F .text	000000000000028c vt_call_vkCmdResolveImage
+00000000000124c0 g     F .text	0000000000000074 vt_call_vkGetInstanceProcAddr
+000000000000dc34 g     F .text	0000000000000090 vt_call_vkCmdSetDepthCompareOp
+0000000000000000       F *UND*	0000000000000000 pthread_mutex_unlock@GLIBC_2.17
+0000000000009e90 g     F .text	0000000000000008 vt_call_vkGetPhysicalDevicePresentRectanglesKHR
+000000000000b1d0 g     F .text	0000000000000114 vt_call_vkCmdBindPipeline
+0000000000009e30 g     F .text	0000000000000008 vt_call_vkEnumerateDeviceLayerProperties
+0000000000016f00 g     F .text	00000000000003f8 vt_call_vkCmdWaitEvents2
+0000000000027004 g     F .text	000000000000073c vt_call_vkCreateFramebuffer
+000000000000b7f0 g     F .text	00000000000000a8 vt_call_vkCmdSetDepthBounds
+000000000000f754 g     F .text	0000000000000218 vt_call_vkCmdClearDepthStencilImage
+000000000003d9c0 g     F .text	0000000000000014 RingBuffer_hasStatus
+000000000000bc94 g     F .text	00000000000000d8 vt_call_vkCmdDrawIndexed
+0000000000023c50 g     F .text	000000000000021c vt_call_vkFreeMemory
